@@ -18,8 +18,8 @@ function PokemonSelect({ add, pokemon = pokemonList }) {
           </option>
         ))}
       </select>
-      <button onClick={() => add(pokemon[pokeIdx])}>Catch one!</button>
-      <button onClick={() => add(choice(pokemon))}>I'm feeling lucky</button>
+      <button onClick={() => add('https://pokeapi.co/api/v2/pokemon/', pokemon[pokeIdx])}>Catch one!</button>
+      <button onClick={() => add('https://pokeapi.co/api/v2/pokemon/', choice(pokemon))}>I'm feeling lucky</button>
     </div>
   );
 }
